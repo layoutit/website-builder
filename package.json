@@ -8,10 +8,7 @@
     "dev": "vite --host 127.0.0.1",
     "build": "vite build",
     "start": "vite preview --host 127.0.0.1",
-    "lint": "tsc --noEmit && eslint . --ext .js,.mjs,.ts,.tsx --ignore-pattern node_modules --ignore-pattern dist --ignore-pattern .local --ignore-pattern out",
-    "audit:unused": "knip --no-progress",
-    "audit:deps": "madge --circular --extensions js,mjs,ts,tsx --ts-config tsconfig.json components frameworks src store types utils",
-    "audit:duplicates": "jscpd --config .jscpd.json components frameworks src store types utils"
+    "lint": "tsc --noEmit && eslint . --ext .js,.mjs,.ts,.tsx --ignore-pattern node_modules --ignore-pattern dist --ignore-pattern .local --ignore-pattern out"
   },
   "dependencies": {
     "jszip": "^3.10.1",
@@ -33,9 +30,6 @@
     "eslint": "8.57.1",
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^7.1.1",
-    "jscpd": "^5.0.11",
-    "knip": "^6.24.0",
-    "madge": "^8.0.0",
     "typescript": "5.9.3",
     "vite": "^8.1.3"
   }
