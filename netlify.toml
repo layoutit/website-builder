@@ -1,7 +1,0 @@
-[build]
-  command = "npm run build"
-  publish = "dist"
-
-[build.environment]
-  NODE_VERSION = "22.20.0"
-  VITE_SITE_URL = "https://build.layoutit.com"
