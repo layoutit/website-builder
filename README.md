@@ -4,7 +4,7 @@ LayoutIt! is a visual Bootstrap 5 interface builder. It lets you compose respons
 
 Use it at [build.layoutit.com](https://build.layoutit.com).
 
-<img width="1826" height="1022" alt="LayoutIt! interface builder preview" src="https://build.layoutit.com/social.png" />
+<img width="1826" height="680" alt="LayoutIt! interface builder preview" src="https://build.layoutit.com/social.png" />
 
 ## Features
 

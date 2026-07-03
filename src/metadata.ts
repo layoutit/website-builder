@@ -4,7 +4,7 @@ const APP_DESCRIPTION =
   "LayoutIt! is a visual Bootstrap 5 interface builder for composing layouts, previewing markup, and exporting HTML or React code.";
 const DEFAULT_SITE_URL = "https://build.layoutit.com";
 const SOCIAL_IMAGE_WIDTH = "1826";
-const SOCIAL_IMAGE_HEIGHT = "1022";
+const SOCIAL_IMAGE_HEIGHT = "680";
 const SOCIAL_IMAGE_ALT = "LayoutIt! interface builder preview";
 
 function getSiteOrigin() {
