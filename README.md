@@ -6,22 +6,6 @@ Use it at [build.layoutit.com](https://build.layoutit.com).
 
 <img width="1826" height="680" alt="LayoutIt! interface builder preview" src="https://build.layoutit.com/social.png" />
 
-## Features
-
-- Drag Bootstrap grid rows, columns, and components onto a live canvas.
-- Edit text content and Bootstrap class-based component options.
-- Switch between edit and preview modes.
-- View generated source for fragment HTML, full-page HTML, and React.
-- Download a static Bootstrap project or a Vite React project.
-- Share layouts through the URL.
-
-## Stack
-
-- Vite
-- React
-- TypeScript
-- Bootstrap 5.3.8 export assets
-
 ## Development
 
 Requires Node.js 22.
