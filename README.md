@@ -25,10 +25,6 @@ npm run build
 
 The production build is emitted to `dist`.
 
-## Deploy
-
-Build with `npm run build` and publish `dist` from your hosting provider.
-
 ## License
 
 MIT.
