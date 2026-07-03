@@ -1,0 +1,19 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  .closeButton {
+    color: #fff;
+    background-color: #6b16a1;
+    border: 0;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 8px 14px;
+
+    &:hover {
+      background-color: #300548;
+    }
+  }
+}

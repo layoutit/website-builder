@@ -1,0 +1,48 @@
+.headerMenuWrapper {
+  flex: 1;
+}
+
+.headerMenu {
+  display: flex;
+  place-items: center;
+  margin-top: 3px;
+  flex: 1;
+
+  .button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #999;
+    border: 0;
+    color: #fff;
+    border-radius: 50%;
+    height: 28px;
+    width: 28px;
+    &:hover {
+      cursor: pointer;
+      background-color: #666666;
+    }
+  }
+
+  button.firstButton {
+    margin-left: 45px;
+  }
+
+  button.headerButton {
+    margin-right: 7px;
+    line-height: 1.5;
+    padding: 5px 10px 4px;
+    font-size: 16px;
+  }
+
+  .feedbackButton {
+    margin-left: auto;
+    margin-right: 0;
+  }
+
+  .icon {
+    font-size: 20px;
+    width: 1em;
+    height: 1em;
+  }
+}

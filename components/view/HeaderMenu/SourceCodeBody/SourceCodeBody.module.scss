@@ -1,0 +1,138 @@
+.bodyContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  height: min(64vh, 720px);
+  min-height: 360px;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 34px;
+  gap: 12px;
+}
+
+.status {
+  color: #b00020;
+  font-size: 14px;
+  font-weight: 600;
+  margin-left: auto;
+}
+
+.modeSwitch {
+  display: inline-flex;
+  flex: 0 0 auto;
+  padding: 2px;
+  background: #e9edf2;
+  border: 1px solid #cbd5e1;
+  border-radius: 999px;
+}
+
+.modeButton,
+.modeButtonActive {
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: #334155;
+  cursor: pointer;
+  font-family: "Alegreya Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1;
+  min-width: 72px;
+  padding: 8px 12px;
+  white-space: nowrap;
+}
+
+.modeButton:hover {
+  color: #0f172a;
+}
+
+.modeButtonActive {
+  background: #ffffff;
+  color: #111827;
+  box-shadow: 0 1px 2px rgb(15 23 42 / 18%);
+}
+
+.copyButton {
+  line-height: 1.5;
+  padding: 6px 12px 5px;
+  font-size: 16px;
+}
+
+.codeArea {
+  flex: 1;
+  width: 100%;
+  min-height: 0;
+  margin: 0;
+  overflow: auto;
+  border: 1px solid #b4bcc8;
+  border-radius: 6px;
+  background: #111827;
+  color: #f8fafc;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  font-size: 13px;
+  line-height: 1.5;
+  padding: 12px;
+  overflow-wrap: anywhere;
+  scrollbar-color: #4b5563 #111827;
+  scrollbar-width: thin;
+  white-space: pre-wrap;
+  user-select: text;
+
+  &:focus {
+    border-color: #3094b4;
+    box-shadow: 0 0 0 3px rgb(48 148 180 / 22%);
+    outline: 0;
+  }
+
+  &::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #111827;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #4b5563;
+    border: 3px solid #111827;
+    border-radius: 999px;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: #64748b;
+  }
+
+  &::-webkit-scrollbar-corner {
+    background: #111827;
+  }
+}
+
+.syntaxDoctype {
+  color: #a78bfa;
+}
+
+.syntaxTag {
+  color: #7dd3fc;
+}
+
+.syntaxAttribute {
+  color: #facc15;
+}
+
+.syntaxValue {
+  color: #86efac;
+}
+
+.syntaxPunctuation {
+  color: #cbd5e1;
+}
+
+.syntaxComment {
+  color: #94a3b8;
+  font-style: italic;
+}

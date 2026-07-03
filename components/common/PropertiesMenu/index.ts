@@ -1,0 +1,1 @@
+export { PropertiesMenu } from "./PropertiesMenu";

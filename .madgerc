@@ -1,0 +1,13 @@
+{
+  "baseDir": ".",
+  "fileExtensions": ["js", "mjs", "ts", "tsx"],
+  "tsConfig": "tsconfig.json",
+  "includeNpm": false,
+  "excludeRegExp": [
+    "^node_modules/",
+    "^\\.local/",
+    "^dist/",
+    "^notes/",
+    "^public/"
+  ]
+}

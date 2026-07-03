@@ -1,0 +1,27 @@
+.logo {
+  display: flex;
+  flex-direction: row;
+  color: #fff;
+  height: 36px;
+  padding: 0;
+  margin: 0 5px;
+  place-items: center;
+  text-decoration: none;
+
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+
+  .logoImage {
+    margin: 0 13px 0 0 !important;
+  }
+
+  & > span:last-child {
+    margin-top: -2px;
+  }
+
+  &:hover {
+    color: #fff;
+  }
+}

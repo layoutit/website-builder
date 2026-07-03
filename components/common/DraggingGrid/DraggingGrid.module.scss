@@ -1,0 +1,67 @@
+@use "../draggingShared" as dragging;
+
+.draggingItem {
+  @include dragging.dragging-shell;
+
+  .dragItem {
+    @include dragging.drag-preview-base;
+
+    position: fixed;
+    width: 30%;
+  }
+
+  .hiddenView {
+    display: none;
+  }
+
+  .itemList {
+    @include dragging.sidebar-item-row;
+  }
+
+  .dragButtonWrap {
+    @include dragging.drag-button-wrap;
+  }
+
+  .dragButtonWrap:hover .draggingButton:not(.draggingButtonDisabled) {
+    background-color: #236f86;
+  }
+
+  .columnSize {
+    width: 112px;
+    height: 25px;
+    line-height: 20px;
+    font-size: 15px;
+    border-radius: 2px;
+    border: 1px solid #ced4da;
+    outline: none;
+    padding: 0 5px;
+
+    &:focus {
+      border-color: #80bdff;
+    }
+  }
+
+  .draggingButton {
+    @include dragging.drag-button-base;
+
+    padding: 6px;
+    line-height: 1;
+    font-weight: 700;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0.25rem;
+  }
+
+  .draggingButtonDisabled {
+    cursor: not-allowed;
+  }
+
+  .draggingIcon {
+    @include dragging.drag-icon;
+  }
+}
+
+.draggingItem {
+  margin-bottom: 5px;
+}

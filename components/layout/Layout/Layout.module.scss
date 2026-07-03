@@ -1,0 +1,13 @@
+.layout {
+  display: grid; 
+  grid-template-columns: 190px 1fr 1fr; 
+  grid-template-rows: 48px 1fr 1fr;
+  &[data-preview="true"] {
+    grid-template-columns: 0px 1fr 1fr;}
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "header header header"
+    "sidebar content content"
+    "sidebar content content"; 
+  min-height: 100vh;
+}

@@ -1,0 +1,33 @@
+.droppable {
+  position: relative;
+  left: 0;
+  right: 0;
+  transition: background-color 0.16s ease, box-shadow 0.16s ease,
+    outline-color 0.16s ease;
+}
+
+.droppable.droppableOver {
+  position: relative;
+  outline: 2px dashed #3094b4;
+  outline-offset: -2px;
+  background-color: rgba(48, 148, 180, 0.08);
+  visibility: visible !important;
+  border-radius: 4px;
+}
+
+.droppable:before {
+  content: "";
+  position: absolute;
+  top: calc(0px - var(--drop-hitbox-expand, 20px));
+  bottom: calc(0px - var(--drop-hitbox-expand, 20px));
+  left: calc(0px - var(--drop-hitbox-expand, 20px));
+  right: calc(0px - var(--drop-hitbox-expand, 20px));
+  z-index: 0;
+  min-height: 100%;
+  background: transparent;
+}
+
+:global(body.dragging) .droppable {
+  --drop-hitbox-expand: calc(24px + 20%);
+  z-index: 2;
+}

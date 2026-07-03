@@ -1,0 +1,49 @@
+@use "../draggingShared" as dragging;
+
+.draggingItem {
+  @include dragging.dragging-shell;
+
+  .dragItem {
+    @include dragging.drag-preview-base;
+
+    position: absolute;
+    width: auto;
+    max-width: 70%;
+    top: 0;
+  }
+
+  .hiddenView {
+    display: none;
+  }
+
+  .itemList {
+    @include dragging.sidebar-item-row;
+
+    button {
+      line-height: 1.2;
+      font-weight: 700;
+    }
+  }
+
+  .dragButtonWrap {
+    @include dragging.drag-button-wrap;
+  }
+
+  .dragButtonWrap:hover .draggingButton {
+    background-color: #236f86;
+  }
+
+  .draggingButton {
+    @include dragging.drag-button-base;
+
+    padding: 5px;
+  }
+
+  .draggingIcon {
+    @include dragging.drag-icon;
+  }
+}
+
+.draggingItem + .draggingItem {
+  margin-top: 5px;
+}

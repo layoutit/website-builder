@@ -1,0 +1,107 @@
+$timing: .4s;
+$ease: cubic-bezier(0.865, 0.140, 0.095, 0.870);
+// $ease: ease-in-out;
+
+.input {
+  display: none;
+}
+
+.label {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  transition: all $timing $ease;
+  user-select: none;
+  font-weight: bold;
+}
+
+.tabContent {
+  // overflow: hidden; 
+  // transform: scaleY(0);   
+  // transform-origin: top;
+  // max-height: 0px;
+  // transition: all $timing $ease;
+  display: none;
+}
+
+.input:checked~.tabContent {
+  display: block;
+  // transform: scaleY(1);
+  // max-height: 100vh;
+}
+
+.accordion {
+  margin-bottom: 13px;
+}
+
+.tabTitle {
+  cursor: pointer;
+  margin-bottom: 3px;
+}
+
+.icon {
+  display: inline-block;
+  height: 1em;
+  vertical-align: text-top;
+  margin-right: 8px;
+}
+
+.iconTooltip {
+  opacity: 0.6;
+  transition: opacity $timing $ease;
+  margin-right: 0;
+}
+
+.iconTooltip:hover {
+  opacity: 1;
+}
+
+.iconTooltip:hover ~ .tooltipContent {
+  display: block;
+}
+
+.tooltip {
+  position: relative;
+  float: right;
+  margin-top: 2px;
+}
+
+.tooltipContent {
+  position: absolute;
+  display: none;
+  top: -12px;
+  left: 30px;
+  color: #999;
+  padding: 10px;
+  text-shadow: none;
+  z-index: 10;
+  background-color: #f9fafb;
+  border-radius: 0.3em;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 10%;
+    right: 100%;
+    border-width: 8px;
+    border-style: solid;
+    border-color: transparent #f9fafb transparent transparent;
+  }
+
+  &:hover {
+    display: block;
+  }
+}
+
+.tooltipTitle {
+  font-size: 1.125em;
+  font-weight: 600;
+}
+
+.tooltiptext {
+  width: 276px;
+}
+
+.tooltipLink {
+  text-decoration: none;
+} 

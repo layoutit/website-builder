@@ -1,0 +1,36 @@
+@mixin dragging-shell {
+  display: block;
+  overflow: hidden;
+}
+
+@mixin drag-preview-base {
+  z-index: -1;
+  color: #000;
+  transition: none;
+  background-color: rgba(255, 255, 255, 0.96);
+  border-radius: 6px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18), 0 0 0 2px rgba(48, 148, 180, 0.35);
+}
+
+@mixin sidebar-item-row {
+  user-select: none;
+  position: relative;
+  min-height: 26px;
+  padding-right: 64px;
+}
+
+@mixin drag-button-wrap {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 99;
+}
+
+@mixin drag-button-base {
+  font-size: 14px;
+  pointer-events: none;
+}
+
+@mixin drag-icon {
+  margin-right: 2px;
+}

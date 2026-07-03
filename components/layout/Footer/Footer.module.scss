@@ -1,0 +1,19 @@
+.footer {
+  margin: 0 10px 10px;
+  padding: 8px 16px;
+  padding-top: 0;
+  padding-left: 10px;
+  font-size: 13px;
+  color: #6c757d;
+  text-align: left;
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+  a {
+    color: inherit;
+    text-decoration: underline;
+  }
+
+  a:hover {
+    color: #1d032d;
+  }
+}

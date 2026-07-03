@@ -1,0 +1,21 @@
+.textEditor {
+  display: inline;
+  font-size: inherit !important;
+  height: auto !important;
+  width: auto !important;
+  *:not(:global(.h1)):not(:global(.h2)):not(:global(.h3)):not(:global(.h4)):not(:global(.h5)):not(:global(.h6)):not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
+    padding: 0 !important;
+    line-height: inherit !important;
+  }
+
+  *:not(:global(.h1)):not(:global(.h2)):not(:global(.h3)):not(:global(.h4)):not(:global(.h5)):not(:global(.h6)):not(h1):not(h2):not(h3):not(h4):not(h5):not(h6):not(:global(.lead)):not(:global(.ql-bubble)):not(:global(.ql-picker)):not(:global(.ql-picker-label)) {
+    font-size: inherit;
+  }
+
+  * {
+    display: inline;
+    text-align: inherit !important;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+      Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif !important;
+  }
+}

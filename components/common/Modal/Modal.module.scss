@@ -1,0 +1,76 @@
+.modal {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: auto;
+    width: min(92vw, 1080px);
+    max-height: calc(100vh - 60px);
+    background-color: #fff;
+    border-radius: 8px;
+    margin-top: 30px;
+    overflow: hidden;
+
+    .header {
+      padding: 16px 22px;
+      flex: 0 0 auto;
+
+      .title {
+        font-family: 'Alegreya Sans', sans-serif;
+        font-size: 30px;
+        margin-bottom: 0;
+      }
+
+      .subtitle {
+        margin-top: 10px;
+        margin-bottom: 0;
+        font-size: 15px;
+        font-weight: 500;
+      }
+
+      .close {
+        background-color: transparent;
+        color: #000;
+        opacity: 0.5;
+        float: right;
+        border: 0;
+        font-weight: 900;
+        padding: 0;
+      }
+
+      .close:hover,
+      .close:focus {
+        color: #000;
+        opacity: 1;
+        cursor: pointer;
+      }
+    }
+
+    .divider {
+      border-top: 1px solid #b4bcc873;
+      margin: 0 22px;
+    }
+
+    .body {
+      padding: 16px 22px;
+      flex: 1 1 auto;
+      min-height: 0;
+    }
+
+    .footer {
+      padding: 0 22px 22px;
+      flex: 0 0 auto;
+    }
+  }
+}

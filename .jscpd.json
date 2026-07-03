@@ -1,0 +1,15 @@
+{
+  "minTokens": 90,
+  "minLines": 8,
+  "mode": "mild",
+  "format": ["javascript", "typescript", "tsx", "scss"],
+  "ignore": [
+    "**/node_modules/**",
+    "**/.local/**",
+    "**/dist/**",
+    "**/notes/**",
+    "**/public/**"
+  ],
+  "reporters": ["console"],
+  "threshold": 0
+}
