@@ -1,6 +1,6 @@
-# LayoutIt!
+# Layoutit Builder
 
-LayoutIt! is a visual Bootstrap 5 interface builder. It lets you compose responsive layouts in the browser, edit Bootstrap components, preview the result, and export clean HTML or a ready-to-run React project.
+This is a visual Bootstrap 5 interface builder. It lets you compose responsive layouts in the browser, edit Bootstrap components, preview the result, and export clean HTML or a ready-to-run React project.
 
 Use it at [build.layoutit.com](https://build.layoutit.com).
 
